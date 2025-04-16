@@ -5,79 +5,81 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Montserrat">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-    .fa {font-size: 80px;}
-    .section-icon {font-size: 120px;}
+    .fa-cog,.fa-wifi,.fa-server {font-size:200px}
+    .w3-primary {background-color: #1E90FF !important; color: white !important;} /* Clean professional blue */
   </style>
 </head>
 <body>
 
 <!-- Navigation Bar -->
 <div class="w3-top">
-  <div class="w3-bar w3-red w3-card w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-padding-large">ABOUT</a>
-    <a href="#engineering" class="w3-bar-item w3-button w3-padding-large">ENGINEERING</a>
-    <a href="#network" class="w3-bar-item w3-button w3-padding-large">NETWORK</a>
-    <a href="#plc" class="w3-bar-item w3-button w3-padding-large">PLC/DCS</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+  <div class="w3-bar w3-primary w3-card w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">
+      <img src="logo.png" alt="Graphic Scholar Inc." style="height:35px; vertical-align:middle; margin-right:10px;">
+      HOME
+    </a>
   </div>
 </div>
 
 <!-- Header -->
-<header class="w3-container w3-center w3-red" style="padding:150px 16px" id="home">
-  <h1 class="w3-jumbo w3-animate-top">Graphic Scholar Inc.</h1>
+<header class="w3-container w3-center w3-primary" style="padding:150px 16px" id="home">
+  <img src="logo.png" alt="Graphic Scholar Logo" style="height:100px; margin-bottom: 24px;">
+  <h1 class="w3-jumbo">Graphic Scholar Inc.</h1>
   <p class="w3-xlarge">Automation | Engineering | Instrumentation</p>
 </header>
 
-<!-- About Section -->
-<div class="w3-container w3-padding-64 w3-light-grey" id="about">
-  <div class="w3-row-padding w3-center w3-margin-top">
-    <div class="w3-col m12">
-      <h2>About Us</h2>
-      <p class="w3-large w3-padding-16">Welcome to Graphic Scholar Inc., a leading provider of automation projects, engineering services, and field instrumentation solutions.</p>
+<!-- About Us -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>About Us</h1>
+      <h5 class="w3-padding-32">Welcome to Graphic Scholar Inc. — a leading provider of automation projects, engineering services, and field instrumentation projects.</h5>
     </div>
+    <div class="w3-third w3-center"></div>
   </div>
 </div>
 
-<!-- Engineering & Design Section -->
-<div class="w3-container w3-padding-64" id="engineering">
-  <div class="w3-row-padding w3-content">
-    <div class="w3-third w3-center">
-      <i class="fa fa-cog section-icon w3-text-red"></i>
-    </div>
+<!-- Engineering & Design -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
     <div class="w3-twothird">
-      <h2>Engineering & Design</h2>
-      <p>We offer support for:</p>
-      <ul class="w3-ul w3-large">
-        <li><strong>FEED & Detailed Design</strong></li>
-        <li><strong>DCS/PLC Node Selection</strong></li>
-        <li><strong>Network & Cable Design</strong></li>
-        <li><strong>Controller & I/O Selection</strong></li>
-        <li><strong>System Graphics Implementation</strong></li>
-        <li><strong>FAT & SAT Support</strong></li>
+      <h1>Engineering & Design</h1>
+      <h5 class="w3-padding-32">From small additions to full greenfield designs, our automation and control portfolio extends across oil & gas, food & beverage, and mining sectors.</h5>
+      <p class="w3-text-grey">We can assist you with:</p>
+      <ul>
+        <li><strong>FEED and Detailed Design</strong></li>
+        <li><strong>DCS/PLC node selection (Virtual or physical servers & Client setups)</strong></li>
+        <li><strong>Network equipment and cable selection</strong></li>
+        <li><strong>Process-suitable controller & I/O selection</strong></li>
+        <li><strong>Graphics implementation based on control systems</strong></li>
+        <li><strong>FAT, SAT as per approved drawings</strong></li>
       </ul>
+    </div>
+    <div class="w3-third w3-center">
+      <i class="fa fa-cog w3-padding-64 w3-text-blue"></i>
     </div>
   </div>
 </div>
 
 <!-- Industrial Network Design -->
-<div class="w3-container w3-padding-64 w3-light-grey" id="network">
-  <div class="w3-row-padding w3-content">
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
     <div class="w3-third w3-center">
-      <i class="fa fa-wifi section-icon w3-text-red"></i>
+      <i class="fa fa-wifi w3-padding-64 w3-text-blue w3-margin-right"></i>
     </div>
     <div class="w3-twothird">
-      <h2>Industrial Network Design</h2>
-      <p class="w3-large">We address industrial cybersecurity from an operational perspective to keep your systems secure and efficient.</p>
-      <p>Technologies we work with:</p>
-      <ul class="w3-ul w3-large">
-        <li><strong>Triconix & Modicon PLC</strong></li>
-        <li><strong>FTE / Ethernet</strong></li>
+      <h1>Industrial Network Design</h1>
+      <h5 class="w3-padding-32">Cybersecurity is critical. We approach it from an operations-first mindset, ensuring your systems stay secure and efficient.</h5>
+      <p class="w3-text-grey">We can assist you with:</p>
+      <ul>
+        <li><strong>Triconix and Modicon PLC</strong></li>
+        <li><strong>FTE/Ethernet</strong></li>
         <li><strong>Foundation Fieldbus</strong></li>
         <li><strong>Profibus</strong></li>
         <li><strong>Modbus ASCII/RTU</strong></li>
@@ -86,33 +88,34 @@
   </div>
 </div>
 
-<!-- PLC/DCS Section -->
-<div class="w3-container w3-padding-64" id="plc">
-  <div class="w3-row-padding w3-content">
-    <div class="w3-third w3-center">
-      <i class="fa fa-server section-icon w3-text-red"></i>
-    </div>
+<!-- PLC/DCS -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
     <div class="w3-twothird">
-      <h2>PLC / DCS Services</h2>
-      <p class="w3-large">From design to commissioning, we provide full-cycle support to ensure your systems are always online.</p>
-      <ul class="w3-ul w3-large">
-        <li><strong>Honeywell TDC2000/3000 & Experion PKS</strong></li>
+      <h1>PLC/DCS</h1>
+      <h5 class="w3-padding-32">We provide cost-effective solutions, reduce downtime, and protect your assets through every stage of the project.</h5>
+      <p class="w3-text-grey">We can assist you with:</p>
+      <ul>
+        <li><strong>Honeywell TDC2000/3000 and Experion PKS</strong></li>
         <li><strong>DeltaV</strong></li>
-        <li><strong>DCS System Evaluation</strong></li>
-        <li><strong>CAD Drafting Services</strong></li>
-        <li><strong>Electrical & Instrumentation Design</strong></li>
-        <li><strong>PLC & VFD Detailed Design</strong></li>
+        <li><strong>Evaluate existing DCS Control Systems</strong></li>
+        <li><strong>Drafting and CAD services</strong></li>
+        <li><strong>Electrical and instrumentation design services</strong></li>
+        <li><strong>Detailed PLC system design</strong></li>
+        <li><strong>Detailed VFD design</strong></li>
       </ul>
+    </div>
+    <div class="w3-third w3-center">
+      <i class="fa fa-server w3-padding-64 w3-text-blue"></i>
     </div>
   </div>
 </div>
 
-<!-- Contact Section -->
-<div class="w3-container w3-black w3-center w3-padding-64" id="contact">
-  <h2>Contact Us</h2>
-  <p class="w3-large">Let's start your next project.</p>
-  <p>📍 11134 72 Ave Edmonton, Alberta, Canada T6G 0B2</p>
-  <p>✉️ <a href="mailto:info@graphicscholar.com" class="w3-hover-text-red">info@graphicscholar.com</a></p>
+<!-- Contact -->
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+  <h1 class="w3-margin w3-xlarge">Contact Us:</h1>
+  <h6 class="w3-padding-16">Address: 11134 72 Ave, Edmonton, Alberta, Canada T6G 0B2</h6>
+  <h6 class="w3-padding-16">Email: info@graphicscholar.com</h6>
 </div>
 
 </body>
